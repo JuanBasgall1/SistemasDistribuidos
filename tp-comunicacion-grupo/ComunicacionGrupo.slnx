@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Grupo.ClienteExterno/Grupo.ClienteExterno.csproj" />
+  <Project Path="Grupo.Common/Grupo.Common.csproj" />
+  <Project Path="Grupo.Coordinador/Grupo.Coordinador.csproj" />
+  <Project Path="Grupo.Nodo/Grupo.Nodo.csproj" />
+</Solution>

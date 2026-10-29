@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+
+# Java (compilados)
+bin/
+*.class
+
+# .NET (compilados)
+obj/
+.vs/
+*.user
+
+# Node
+node_modules/
+dist/
+
+# Python
+.venv/
+__pycache__/
+
+# Clon del repo de la catedra (github.com/GdRottoli/notebooks),
+# no es trabajo de este repo: se clona aparte.
+/notebooks/
