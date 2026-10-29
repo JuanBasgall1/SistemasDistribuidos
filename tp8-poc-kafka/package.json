@@ -1,0 +1,34 @@
+{
+  "name": "activation-poc",
+  "private": true,
+  "version": "0.2.0",
+  "description": "POC de activación de servicios con Kafka, NestJS y React (fase 2)",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "test": "tsc -p tsconfig.json --noEmit && node --test -r ts-node/register test/*.test.ts",
+    "start:activation-api": "node dist/apps/activation-api/src/main.js",
+    "start:billing": "node dist/apps/billing-service/src/main.js",
+    "start:provisioning": "node dist/apps/provisioning-service/src/main.js",
+    "start:notification": "node dist/apps/notification-service/src/main.js",
+    "start:crm-analytics": "node dist/apps/crm-analytics-service/src/main.js"
+  },
+  "dependencies": {
+    "@nestjs/common": "^11.2.8",
+    "@nestjs/core": "^11.2.8",
+    "@nestjs/microservices": "^11.2.8",
+    "@nestjs/platform-express": "^11.2.8",
+    "@nestjs/platform-socket.io": "^11.2.8",
+    "@nestjs/websockets": "^11.2.8",
+    "kafkajs": "^2.2.4",
+    "mongodb": "^6.21.0",
+    "nodemailer": "^6.10.1",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "@types/nodemailer": "^8.0.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
